@@ -1,0 +1,13 @@
+//FUNÇÃO PARA GERAR O TABULEIRO:
+// A função "createBoard" cria um tabuleiro na página HTML, com um número de linhas e colunas especificado pelos argumentos "rows" e "cols", respectivamente.
+// A primeira linha da função obtém a referência do elemento HTML com id "board" e a atribui à constante "board".
+// A segunda linha adiciona a classe "board" à lista de classes do elemento "board", que será usada posteriormente no arquivo CSS para estilizar o tabuleiro.
+// O laço de repetição cria um número de células igual ao produto das variáveis "rows" e "cols".
+// A cada iteração do laço, uma nova célula é criada e adicionada ao final do elemento "board" usando o método "appendChild".
+// Por fim, a função retorna o elemento "board" completo com todas as células criadas e adicionadas a ele.
+
+//FUNÇÃO PARA GERAR OS BLOCOS ALEATORIOS NO TABLUEIRO:
+//A função addBlocks recebe dois parâmetros: board, que é o elemento HTML que representa o tabuleiro, e numBlocks, que é a quantidade de blocos que devem ser adicionados.
+//A função adiciona blocos aleatoriamente no tabuleiro, selecionando células aleatórias através da propriedade children do elemento board. 
+//Se a célula selecionada não possuir a classe block, a classe é adicionada à célula. 
+//Caso contrário, a iteração é repetida para selecionar uma nova célula.
